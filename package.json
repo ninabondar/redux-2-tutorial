@@ -25,6 +25,9 @@
   "dependencies": {
     "deep-freeze": "0.0.1",
     "expect": "^22.4.0",
+    "lodash": "^4.17.5",
+    "prop-types": "^15.6.1",
+    "node-uuid": "^1.4.8",
     "react-redux": "^5.0.7",
     "redux": "^3.7.2",
     "webpack": "^4.1.1",
