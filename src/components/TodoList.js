@@ -2,7 +2,7 @@ import React from "react";
 import {Todo} from "./Todo";
 
 
-export const TodoList = ({todos, onTodoClick}) => (
+const TodoList = ({todos, onTodoClick}) => (
     <ul>
         {todos.map(todo =>
             <Todo
@@ -12,3 +12,5 @@ export const TodoList = ({todos, onTodoClick}) => (
         }
     </ul>
 );
+
+export default TodoList;
