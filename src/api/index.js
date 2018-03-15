@@ -1,5 +1,6 @@
 import { v4 } from "node-uuid";
 
+
 const fakeDatabase = {
     todos: [{
         id: v4(),
@@ -18,9 +19,11 @@ const fakeDatabase = {
 
 const delay = (ms) =>
     new Promise(resolve => setTimeout(resolve, ms));
-
 export const fetchTodos = (filter) =>
     delay(500).then(() => {
+        if (Math.random() > 0.5) {
+            throw new Error('Babah');
+        }
         switch (filter) {
             case 'all':
                 return fakeDatabase.todos;
